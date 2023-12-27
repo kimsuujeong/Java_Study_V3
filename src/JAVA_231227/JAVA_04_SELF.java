@@ -10,21 +10,15 @@ public class JAVA_04_SELF {
 		static int HP; // 체력
 		static int Level; // 레벨
 		static int XP; // 경험치
-		
+
 		public Character(String name, int hP, int Level, int XP) {
 			super();
 			this.name = name;
 			hP = 100;
 			Level = 1; // 메서드는 캐릭터의 레벨을 1 증가시키고, 경험치를 초기화해야 함
 			XP = 0;
-			
-		}
 
-		// =============== 캐릭터 생성 줄 ==================
-		// 아룸, 체력, 레벨, 경험치
-		Character ch1 = new Character("군침이", 100, 1, 0);
-		Character ch2 = new Character("뽀로로", 100, 1, 0);
-		// ============================================
+		}
 
 	}
 
@@ -39,31 +33,38 @@ public class JAVA_04_SELF {
 			Character.HP -= 20;
 			Character.XP += 50;
 		} else { // 지면 그냥 HP만 깎임
-			Character.HP -= 20; 
+			Character.HP -= 20;
 		}
-		
+
 		System.out.println(result);
-	
+
 	}
 
 	public static void battle() { // 메서드는 다른 캐릭터와 전투를 시뮬레이션하며,
-
 		
-
+		while(Character.HP == 0) { //HP가 0이 되면 끝남
+			
+		}
 		// ch1과 ch2가 전투에서 battle 했습니다.
 		// ch1&2의 현재 체력 ch1의HP
 		// random ch?의 레벨업
-		
 
 	}
 
 	public static void main(String[] args) {
 		
+		// =============== 캐릭터 생성 줄 ==================
+		// 아룸, 체력, 레벨, 경험치
+		Character ch1 = new Character("군침이", 100, 1, 0);
+		Character ch2 = new Character("뽀로로", 100, 1, 0);
+		// ============================================
+		
+		
 		score();
 		
-		// ch?가 현재 체력이 0 되면 게임 종료
 		// ch1이 레벨업 했습니다. 현재 레벨:3
 		// ch2이 레벨업 했습니다. 현재 레벨:3
 
 	}
+
 }
