@@ -1,4 +1,4 @@
-package special_01;
+package JAVA_240101.special_01;
 
 public class Lion implements Mammal {
 
@@ -15,7 +15,7 @@ public class Lion implements Mammal {
 		// TODO Auto-generated method stub
 		Mammal.super.sound();
 		
-		System.out.println("¾îÈï");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		enegry -= 10;
 
 	}
@@ -24,7 +24,7 @@ public class Lion implements Mammal {
 	public void move() {
 		// TODO Auto-generated method stub
 		Mammal.super.move();
-		System.out.println("»ç´Ù´Ú");
+		System.out.println("ï¿½ï¿½Ù´ï¿½");
 		enegry -= 20;
 	}
 

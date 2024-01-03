@@ -1,4 +1,4 @@
-package special_01;
+package JAVA_240101.special_01;
 
 public class Penguin implements Bird {
 	
@@ -9,7 +9,7 @@ public class Penguin implements Bird {
 		// TODO Auto-generated method stub
 		Bird.super.sound();
 		
-		System.out.println("²Ù¿¨");
+		System.out.println("ï¿½Ù¿ï¿½");
 		enegry -= 5;
 	}
 
@@ -18,7 +18,7 @@ public class Penguin implements Bird {
 	public void move() {
 		// TODO Auto-generated method stub
 		Bird.super.move();
-		System.out.println("Æë´Ù´Ú");
+		System.out.println("ï¿½ï¿½Ù´ï¿½");
 		enegry -= 10;
 	}
 
