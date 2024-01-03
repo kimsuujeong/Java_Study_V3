@@ -1,12 +1,6 @@
 package JAVA_240102;
 
 import java.util.Arrays;
-// 제가 추가한 코멘트는 /* */ 사이를 보시면됩니다.
-// 총평
-// 1. 고뇌의 흔적이 많이보임
-// 2. 심사위원수를 구하는경우를 따로 메소드로 만들면 재사용성을 높일수 있지 않을까?
-// 3. 변수명이 조금더 명확하면 좋을거같음!
-// 4. 나머지는 /**/ 내용 참조
 
 class JAVA_02 {
 
@@ -22,7 +16,7 @@ class JAVA_02 {
 		long simsa = 1;// 심사위원
 
 		while (shortSimsa <= longSimsa) {
-			/* (shortSimsa + (longSimsa - shortSimsa) / 2) 와 수정씨의 코드의 차이가 있는지 확인해보면 좋아요. */
+			
 			long mid = (shortSimsa + longSimsa) / 2;
 			long sum = 0; // 심사위원 수 구하기
 
