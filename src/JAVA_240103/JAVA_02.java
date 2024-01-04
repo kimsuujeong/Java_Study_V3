@@ -32,7 +32,7 @@ public class JAVA_02 {
 			
 			while (!dfs[idx]) { // 열지 않은 상자가 있을 때
 				
-				dfs[idx] = true; // 상자를 연다
+				dfs[idx] = true; // 상자를 연다 
 				core++; // 점수 += 1
 				idx = cards[idx] - 1; // 0 6 3 0 2 5 0 0  --> 0이 된 숫자 만큼 true
 				
