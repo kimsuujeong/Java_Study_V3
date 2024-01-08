@@ -25,11 +25,13 @@ public class JAVA_02 {
 
 			arry[i] = String.valueOf(n[i]); // valueOf -> 객체를 바꾸는 방법
 											// Stirng 형으로 담아줌
+			
 		}
+		
 		
 
 
-		Arrays.sort(arry, Collections.reverseOrder()); // 내림차수 정렬
+//		Arrays.sort(arry, Collections.reverseOrder()); // 내림차수 정렬
 
 		String answer = "";
 
