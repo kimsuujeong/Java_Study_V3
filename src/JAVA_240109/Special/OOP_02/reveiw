@@ -1,0 +1,9 @@
+인터페이스랑 클래스밖에 몰랐는데,
+인터페이스 없이 포함관계라는 것을 알게 되었다!!
+
+ex)
+
+class Dogbird extends Dog{
+	// 클래스 포함
+	Bird b = new Bird(); // 포함 관계
+}
