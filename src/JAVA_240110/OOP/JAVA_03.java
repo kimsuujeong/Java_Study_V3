@@ -8,26 +8,28 @@ public class JAVA_03 {
 
 	public static Set<String> ssing_and_song(String[] genres, int[] plays) {
 
-		HashMap<String, ArrayList<Integer>> map = new HashMap<String, ArrayList<Integer>>();
-		int plays_ln = plays.length;
+		HashMap<String, String[]> map = new HashMap<String, String[]>();
 
+		int idx = 0;
+		int plays_ln = plays.length;
+		int[] value = {plays_ln};
+		
 		// 장르별 (key)와 재생횟수,인덱스(vlaue) 저장
 		for (int i = 0; i < plays_ln; i++) {
-			ArrayList<Integer> list = new ArrayList<Integer>();
 			for (int j = 0; j < plays_ln; j++) {
-				int idx = 0;
-				list.add(plays[j], idx++);
+				
 			}
-			map.put(genres[i], list);
 		}
+		
+		
 
-		return map.keySet();
+		return null;
+
 	}
 
 	public static void main(String[] args) {
 
-		Set<String> result1 = ssing_and_song(
-				new String[] { "classic", "pop", "classic", "classic", "pop" },
+		Set<String> result1 = ssing_and_song(new String[] { "classic", "pop", "classic", "classic", "pop" },
 				new int[] { 500, 600, 150, 800, 2500 });
 
 		System.out.println(result1);
