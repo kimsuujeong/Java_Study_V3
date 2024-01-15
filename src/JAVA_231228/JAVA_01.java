@@ -23,7 +23,7 @@ public class JAVA_01 {
 	}
 
 	public static void main(String[] args) {
-
+		
 		System.out.println("quiz\tanswer");
 		System.out.print("gGoocCo\t");
 		System.out.println(quiz("gGoocCo"));

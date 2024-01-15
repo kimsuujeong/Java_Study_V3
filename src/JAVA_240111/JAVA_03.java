@@ -13,7 +13,9 @@ public class JAVA_03 {
 
 	        for (int i = 0 ; i < friends.length; i++) {
 	        	for (int j = 0 ; j < friends.length; j++) {
-	        		BestFried[][] = 
+	        		if() {
+	        			
+	        		}
 	        	}
 	        }
 	        
