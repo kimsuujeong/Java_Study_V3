@@ -7,6 +7,7 @@ public class RoundRobin implements Scheculer{
 	@Override
 	public void getNaxtCall() {
 		// TODO Auto-generated method stub
+		System.out.println();
 		
 	}
 

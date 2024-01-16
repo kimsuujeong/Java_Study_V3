@@ -8,50 +8,50 @@ public class JAVA_02 {
 		System.out.println("이름을 적어주세요 : ");
 		String name = "김수정";
 		System.out.println("메일을 적어주세요 : ");
-		String mail = "";
+		String mail = "tnwjd0103@naver.com";
 
-		mailAndName(name, mail);
+		try {
+			mailAndName(name, mail);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
-	public static void mailAndName(String name, String mail) {
+	public static void mailAndName(String name, String mail) throws Exception {
 
 		System.out.println(mail);
-
-		// 메일 주소 길이 찾기
-//		if (mail == null) {
-//			System.out.println("메일 주소가 입력되지 않았습니다.");
-//		}
-
+		
 		try {
-			if (mail == null) {
-				throw new Exception();
-			}
-		} catch (Exception e) {
-			System.out.println("메일 주소가 입력 되지 않았습니다.");
+			// 메일 주소 길이 찾기
+		if (mail == "") {
+			throw new NotEmail(mail);
 		}
 
 		// @이 찾기
 		if (!mail.contains("@")) {
-			System.out.println("아따 메일 주소가 잘못 됐소");
+			throw new InvalidEmailException(mail);
 		}
 
 		// admin 찾기
 		if (mail.contains("admin")) {
-			System.out.printf("%s는 관리자가 아닙니다.\n", name);
+			throw new choonsikException(name, mail);
 		}
 
 		// 없는 메일 주소 찾기
 		if (!mail.contains(".com")) {
-			System.out.println("존재하지 않는 주소 입니다.");
+			throw new NotAdress(mail);
 		}
 
+		} catch (Exception e) {
+			// TODO: handle exception
+			throw e;
+		}
+		
 		System.out.printf("메일 주소-> %s \n이메일 주소 -> %s \n", name, mail);
 
 	}
 	
-	static void notEmilException() throws Exception{
-		
-	}
 
 }
