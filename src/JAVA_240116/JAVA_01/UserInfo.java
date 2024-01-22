@@ -2,21 +2,15 @@ package JAVA_240116.JAVA_01;
 
 public class UserInfo {
 	
-	int userId;
+	String userId;
 	int passWd;
 	String userName;
 	
-	public UserInfo(int userId, int passWd, String userName) {
-		super();
-		this.userId = userId;
-		this.passWd = passWd;
-		this.userName = userName;
-	}
-	public int getUserId() {
+	public String getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setUserId(String string) {
+		this.userId = string;
 	}
 	public int getPassWd() {
 		return passWd;

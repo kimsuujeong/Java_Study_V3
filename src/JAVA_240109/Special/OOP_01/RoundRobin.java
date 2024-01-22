@@ -7,13 +7,14 @@ public class RoundRobin implements Scheculer{
 	@Override
 	public void getNaxtCall() {
 		// TODO Auto-generated method stub
-		System.out.println();
+		System.out.println("상담원 리스트를 가져옵니다.");
 		
 	}
 
 	@Override
 	public void sendCallToAgent() {
 		// TODO Auto-generated method stub
+		System.out.println("상담 건수가 가장 적은 분에게 전화를 넘깁니다.");
 		
 	}
 

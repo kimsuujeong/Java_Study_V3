@@ -5,21 +5,18 @@ public interface Animal {
 	void reserveAppointment();
 	
 	public static void main(String[] args) {
-		Dog dog = new Dog(15);
+		
+		
 
 	}
 	
 }
 
 class Dog implements Animal {
-	
-	int availableTime;
-	
-	public Dog(int availableTime) {
-		this.availableTime = availableTime;
-	}
 
-	@Override
+	
+	
+	@Override  
 	public void getName() {
 		// TODO Auto-generated method stub
 		
@@ -28,10 +25,9 @@ class Dog implements Animal {
 	@Override
 	public void reserveAppointment() {
 		// TODO Auto-generated method stub
-		if ( availableTime > 12) {
-			System.out.println("해당 시간은 예약이 불가능합니다");
-		}
+		
 	}
+	
 	
 }
 

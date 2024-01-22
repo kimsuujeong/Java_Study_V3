@@ -1,31 +1,25 @@
 package JAVA_240109.Special.OOP_02;
 
-public class AdvancedLevel implements PlayerLevel{
+public class AdvancedLevel extends PlayerLevel {
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("빨리 달립니다.");
 	}
 
 	@Override
-	public void jump(int count) {
-		// TODO Auto-generated method stub
-		
+	public void jump() {
+		System.out.println("높이 jump 합니다.");
 	}
 
 	@Override
 	public void turn() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("turn 못하지롱");
 	}
 
 	@Override
-	public void showLevelMessage() {
-		// TODO Auto-generated method stub
-		
+	public void ShowLevelMessage() {
+		System.out.println("****** 중급자 레벨입니다. ******");
 	}
-
-
 
 }

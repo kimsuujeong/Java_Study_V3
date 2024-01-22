@@ -1,28 +1,41 @@
 package JAVA_240109.Special.OOP_02;
 
-public interface Player {
-	// GameLevel 속성을 가진다.
-	// 각 GameLevel 단게 마다 run,jump,turn 기능이 업그레이드 된다
+public class Player {
 
-	static PlayerLevel level;
+	// playerLevel과 포함 관계
+	private static PlayerLevel level;
 	
-	static void Player() {
+	public Player() {
 		level = new BeginnerLevel();
-		level.showLevelMessage();
+		level.ShowLevelMessage();
 	}
 	
-	static PlayerLevel getLevel() {
+	public PlayerLevel getLevel() {
 		return level;
 	}
-	default void upgradeLevel(PlayerLevel level) {
+	private void uppgradeLevel(PlayerLevel level) {
 		this.level = level;
-		level.showLevelMessage();
-		
+		level.ShowLevelMessage();
+		// 재정의
+
 	}
-	static void paly() {
-		PlayerLevel.go(0);
-	};
+	public void paly(int count) {
+		// TODO Auto-generated method stub
+		level.go(count);
+
+	}
 	
+	public static void main(String[] args) {
+		Player player = new Player();
+		level.go(1);
+		
+		AdvancedLevel advancedLevel = new AdvancedLevel();
+		player.uppgradeLevel(advancedLevel);
+		level.go(2);
+		
+		SuperLevel superLevel = new SuperLevel();
+		player.uppgradeLevel(superLevel);
+		level.go(3);
+	}
+
 }
-	
-	

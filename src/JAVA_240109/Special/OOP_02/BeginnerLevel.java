@@ -1,32 +1,25 @@
 package JAVA_240109.Special.OOP_02;
 
-public class BeginnerLevel implements PlayerLevel{
+public class BeginnerLevel extends PlayerLevel{
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("천천히 달립니다.");
 	}
 
 	@Override
-	public void jump(int count) {
-		// TODO Auto-generated method stub
-		
+	public void jump() {
+		System.out.println("jump 못하지롱");
 	}
 
 	@Override
 	public void turn() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("trn 못하지롱");
 	}
 
 	@Override
-	public void showLevelMessage() {
-		// TODO Auto-generated method stub
-		
+	public void ShowLevelMessage() {
+		System.out.println("****** 초급자 레벨입니다. ******");
 	}
-
-
-
 
 }
